@@ -95,12 +95,18 @@
 .header-nav .nav > li:last-child {
 	margin-right: 0;
 }
+.header-nav .nav > li a:hover {
+	opacity: 0.7;
+}
 .mobile-menu .nav > li {
 	margin-bottom: 10px;
 	font-size: 18px;
 }
 .mobile-menu .nav > li:last-child {
 	margin-bottom: 0;
+}
+.mobile-menu .nav > li a:hover {
+	opacity: 0.7;
 }
 .mobile-menu .phone {
 	display: block;
@@ -156,6 +162,9 @@
 }
 .footer-top .footer-main .nav > li {
 	font-size: 18px;
+}
+.footer-top .footer-main .nav > li a:hover {
+	opacity: 0.7;
 }
 .footer-top .phone {
 	width: 100%;
@@ -336,13 +345,23 @@
 	font-size: 18px;
 	border: 0;
 }
+.b-btn:hover {
+	background-color: #eecb1c;
+}
 .b-btn.grey-btn {
 	background-color: #f0f0f0;
+}
+.b-btn.grey-btn:hover {
+	background-color: #e0e0e0;
 }
 .b-btn.border-btn {
 	padding: 16px 10px;
 	border: 1px solid #191d20;
 	background-color: transparent;
+}
+.b-btn.border-btn:hover {
+	background-color: #191d20;
+	color: #ffffff;
 }
 
 .b-form-title {
