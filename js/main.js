@@ -23,7 +23,6 @@ $(document).ready(function(){
 
 	$('.fancybox-gal').fancybox({loop: true});
 	$('.fancybox').fancybox({touch: false});
-	$('input[type="tel"]').inputmask('+7 999 999 99 99');
 
 	$(document).on('click','.close-btn',function(){
 		$('.mobile-btn').removeClass('active');
@@ -154,5 +153,27 @@ $(document).ready(function(){
 	$(window).resize(function(){
 		HeaderScroll();
 	});
+
+
+	function TelMask(){
+		$('input[type="tel"]').inputmask('+7 999 999 99 99');
+
+		$('input[type="tel"]').intlTelInput({
+			autoHideDialCode: false,
+			autoPlaceholder: "aggressive",
+			placeholderNumberType: "MOBILE",
+			preferredCountries: ['ru'],
+			separateDialCode: true,
+			utilsScript: "js/utils.js",
+			customPlaceholder: function (selectedCountryPlaceholder, selectedCountryData) {
+				return '+' + selectedCountryData.dialCode + ' ' + selectedCountryPlaceholder.replace(/[0-9]/g, '_').replace(/[-]/g, ' ');
+			},
+		});
+		$('input[type="tel"]').on("countrychange", function (e, countryData){
+			$(this).val('');
+			$(this).inputmask($(this).attr('placeholder').replace(/[_]/g, '9'));
+		});
+	}
+	TelMask();
 
 });

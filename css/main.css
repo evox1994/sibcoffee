@@ -1304,6 +1304,23 @@
 	margin-top: 15px;
 }
 
+.intl-tel-input {
+	display: block !important;
+}
+.intl-tel-input .selected-flag {
+	width: 50px !important;
+	background: none !important;
+}
+.intl-tel-input.separate-dial-code .selected-dial-code {
+	display: none !important;
+}
+.intl-tel-input .flag-container {
+	color: #191d20;
+}
+.intl-tel-input input {
+	padding-left: 60px !important;
+}
+
 
 
 @media screen and (max-width: 1230px){
