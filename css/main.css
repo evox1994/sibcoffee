@@ -1740,7 +1740,7 @@
 	.b-face .wrap .content .text {
 		margin-top: 20px;
 		font-size: 14px;
-		max-width: 420px;
+		max-width: 370px;
 	}
 	.b-face .wrap .content .text ul > li {
 		padding-left: 16px;
@@ -1753,7 +1753,7 @@
 	}
 	.b-face .wrap .content .partner {
 		margin-top: 20px;
-		max-width: 420px;
+		max-width: 370px;
 		font-size: 14px;
 	}
 	.b-face .wrap .content .partner img {
