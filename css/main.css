@@ -470,7 +470,7 @@
 }
 .b-face .wrap .content .text ul > li {
 	position: relative;
-	padding-left: 40px;
+	padding-left: 30px;
 }
 .b-face .wrap .content .text ul > li:before {
 	content: '';
@@ -591,7 +591,7 @@
 }
 .b-text-img .content .text a {
 	color: #003687;
-	border-bottom: 1px solid #003687;
+	/*border-bottom: 1px solid #003687;*/
 }
 
 .b-advs {
@@ -931,7 +931,7 @@
 	display: block;
 	font-size: 28px;
 	font-weight: 700;
-	padding-right: 120px;
+	padding-right: 125px;
 }
 .b-formats .card.small-icon .title {
 	padding-right: 80px;
@@ -1755,6 +1755,7 @@
 		margin-top: 20px;
 		max-width: 370px;
 		font-size: 14px;
+		align-items: flex-start;
 	}
 	.b-face .wrap .content .partner img {
 		max-width: 30px;
@@ -1787,7 +1788,7 @@
 	}
 	.b-text-img .content {
 		width: 100%;
-		text-align: center;
+		/*text-align: center;*/
 		margin-top: 30px;
 	}
 	.b-text-img .content .items .item {
@@ -2110,6 +2111,17 @@
 		max-height: 30px;
 		max-width: 30px;
 		left: 35px;
+	}
+
+	.b-faq {
+		margin-top: 30px;
+	}
+	.b-faq > li .qwestion {
+		font-size: 18px;
+	}
+	.b-faq > li .answer {
+		font-size: 15px;
+		margin-top: 10px;
 	}
 }
 @media screen and (max-width: 560px){
