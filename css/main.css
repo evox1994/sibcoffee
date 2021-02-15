@@ -406,6 +406,16 @@
 .b-form .flex + .policy-text {
 	margin-top: 0;
 }
+.b-section.grey .policy-text .radio-btn {
+	border-color: #343333;
+}
+.b-section.grey .policy-text .radio-btn.active {
+	background-color: #343333;
+}
+.b-section.grey .policy-text .radio-btn.active:before,
+.b-section.grey .policy-text .radio-btn.active:after {
+	background-color: #ffffff;
+}
 
 .b-face {
 	position: relative;
@@ -964,6 +974,21 @@
 .popup .b-text,
 .popup .b-form {
 	margin-top: 30px;
+}
+.popup .b-input input,
+.popup .b-input textarea {
+	border-color: #ecf1f7;
+	background-color: #ecf1f7;
+}
+.popup .policy-text .radio-btn {
+	border-color: #343333;
+}
+.popup .policy-text .radio-btn.active {
+	background-color: #343333;
+}
+.popup .policy-text .radio-btn.active:before,
+.popup .policy-text .radio-btn.active:after {
+	background-color: #ffffff;
 }
 
 .b-thanks {
